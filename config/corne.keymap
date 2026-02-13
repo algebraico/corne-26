@@ -47,10 +47,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB  &kp N1        &kp N2        &kp N3            &kp N4             &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4       &bt BT_SEL 0    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &trans
-&trans   &bt BT_PRV    &bt BT_NXT    &ext_power EP_ON  &ext_power EP_OFF  &trans          &none     &none     &none     &none      &none   &trans
-                                     &kp LGUI          &trans             &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB  &kp N1        &kp N2        &kp N3            &kp N4             &kp N5          &kp N6    &kp N7    &kp N8        &kp N9     &kp N0  &kp BSPC
+&trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4       &bt BT_SEL 0    &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &none   &trans
+&trans   &bt BT_PRV    &bt BT_NXT    &ext_power EP_ON  &ext_power EP_OFF  &trans          &none     &none     &none         &none      &none   &trans
+                                     &kp RIGHT_ALT     &trans             &kp SPACE       &kp RET   &trans    &kp LEFT_GUI
             >;
         };
 
@@ -66,7 +66,7 @@
 &kp TAB    &kp EXCL      &kp AT      &kp HASH          &kp LS(GRAVE)   &kp PRCNT               &kp CARET              &kp AMPS         &kp KP_MULTIPLY    &kp SLASH      &kp GRAVE  &kp BSPC
 &kp LCTRL  &kp QUESTION  &kp DOLLAR  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp BSLH   &kp GRAVE
 &kp LSHFT  &kp PIPE      &kp UNDER   &kp KP_EQUAL      &kp PLUS        &kp KP_MINUS            &kp UNDER              &kp PLUS         &kp LBRC           &kp RBRC       &kp PIPE   &kp TILDE
-                                     &kp LGUI          &trans          &kp SPACE               &kp RET                &trans           &kp RALT
+                                     &kp RIGHT_ALT     &trans          &kp SPACE               &kp RET                &trans           &kp LEFT_WIN
             >;
         };
 
@@ -76,7 +76,7 @@
 &none      &kp EXCL      &kp AT      &kp HASH          &kp LS(GRAVE)   &kp PRCNT               &kp CARET              &kp AMPS         &kp KP_MULTIPLY    &kp SLASH    &kp GRAVE  &kp BSPC
 &kp LCTRL  &kp QUESTION  &kp DOLLAR  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &ES_eniemin  &kp BSLH   &kp GRAVE
 &kp LSHFT  &kp PIPE      &kp UNDER   &kp KP_EQUAL      &kp PLUS        &kp KP_MINUS            &kp UNDER              &kp PLUS         &kp LBRC           &kp RBRC     &kp PIPE   &kp TILDE
-                                     &kp LGUI          &trans          &kp SPACE               &kp RET                &trans           &kp RALT
+                                     &kp RIGHT_ALT     &trans          &kp SPACE               &kp RET                &trans           &kp LEFT_GUI
             >;
         };
 
@@ -85,12 +85,5 @@
         extra_3 { status = "reserved"; };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        esp_condition {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
