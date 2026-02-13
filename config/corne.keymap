@@ -30,10 +30,10 @@
 
             display-name = "Base";
             bindings = <
-&mt ESCAPE TAB  &kp APOS       &kp COMMA  &kp PERIOD     &kp P  &kp Y        &kp F    &kp G  &kp C         &kp R  &kp L  &kp BSPC
-&kp LCTRL       &kp A          &kp O      &kp E          &kp U  &kp I        &kp D    &kp H  &kp T         &kp N  &kp S  &kp RIGHT_SHIFT
-&kp LSHFT       &kp SEMICOLON  &kp Q      &kp J          &kp K  &kp X        &kp B    &kp M  &kp W         &kp V  &kp Z  &kp RIGHT_CONTROL
-                                          &kp RIGHT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_GUI
+&mt ESCAPE TAB    &kp APOS       &kp COMMA  &kp PERIOD     &kp P  &kp Y        &kp F    &kp G  &kp C         &kp R  &kp L  &kp BSPC
+&kp LEFT_SHIFT    &kp A          &kp O      &kp E          &kp U  &kp I        &kp D    &kp H  &kp T         &kp N  &kp S  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp SEMICOLON  &kp Q      &kp J          &kp K  &kp X        &kp B    &kp M  &kp W         &kp V  &kp Z  &kp RIGHT_CONTROL
+                                            &kp RIGHT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_GUI
             >;
         };
 
@@ -69,9 +69,7 @@
             >;
         };
 
-        extra_1 {
-            status = "reserved";
-        };
+        extra_1 { status = "reserved"; };
 
         extra_2 { status = "reserved"; };
 
